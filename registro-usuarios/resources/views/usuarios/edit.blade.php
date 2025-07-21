@@ -22,15 +22,15 @@
                         <input type="text" id="curp" name="curp" class="form-control" value="{{ $usuario->curp }}" required>
                     </div>
 
-                    <!-- Email -->
+                    <!-- correo -->
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email">Correo</label>
                         <input type="email" id="email" name="email" class="form-control" value="{{ $usuario->email }}" required>
                     </div>
 
-                    <!-- Contraseña (opcional) -->
+                    <!-- Contraseña -->
                     <div class="form-group">
-                        <label for="password">Contraseña (opcional)</label>
+                        <label for="password">Contraseña</label>
                         <input type="password" id="password" name="password" class="form-control">
                     </div>
 
@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <label for="pokemon_favorito">Pokémon Favorito</label>
                         <select id="pokemon_favorito" name="pokemon_favorito" class="form-control" required>
-                            <option value="">Selecciona un Pokémon</option>
+                            <option value="">Selecciona tu Pokémon</option>
                         </select>
                         <br>
                         <img id="pokemon_img" src="" alt="Imagen del Pokémon" width="120" class="d-none">

@@ -21,9 +21,9 @@
                         <input type="text" id="curp" name="curp" class="form-control" value="{{ old('curp') }}" required>
                     </div>
 
-                    <!-- Email -->
+                    <!-- Correo -->
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email">Correo</label>
                         <input type="email" id="email" name="email" class="form-control" value="{{ old('email') }}" required>
                     </div>
 
@@ -49,7 +49,7 @@
                         <img id="pokemon_img" src="" alt="Imagen del Pokémon" width="120" class="d-none">
                     </div>
 
-                    <button type="submit" class="btn btn-success mt-3 w-100">Registrar</button>
+                    <button type="submit" class="btn btn-success mt-3 w-100">Registro</button>
                 </form>
             </div>
         </div>

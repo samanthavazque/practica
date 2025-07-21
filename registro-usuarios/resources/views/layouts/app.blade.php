@@ -14,23 +14,31 @@
 <body>
 
     <!-- Navbar (Color Rojo) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Mi Aplicación</a>
+
+            <a class="navbar-brand" href="{{ url('/') }}">CRUD</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
+
                 <ul class="navbar-nav ms-auto">
                     @auth
                         <li class="nav-item">
+
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
                                 @csrf
+
                                 <button type="submit" class="btn btn-primary btn-sm">
                                     <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
                                 </button>
+
                             </form>
+
                         </li>
                     @else
                         
@@ -38,7 +46,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Contenido Principal -->
     <div class="container mt-4">

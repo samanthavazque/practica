@@ -13,9 +13,25 @@ use Carbon\Carbon;
 class UsuarioController extends Controller
 {
     // Muestra la lista de usuarios con paginación
-    public function index()
+   public function index()
     {
-        $usuarios = Usuario::latest()->paginate(10);
+        $usuarios = Usuario::paginate(10); // o ->all() si no usas paginación
+
+        foreach ($usuarios as $usuario) {
+            if ($usuario->pokemon_favorito) {
+                $pokemonName = strtolower($usuario->pokemon_favorito);
+                try {
+                    $response = file_get_contents("https://pokeapi.co/api/v2/pokemon/{$pokemonName}");
+                    $json = json_decode($response, true);
+                    $usuario->pokemon_imagen = $json['sprites']['front_default'] ?? null;
+                } catch (\Exception $e) {
+                    $usuario->pokemon_imagen = null;
+                }
+            } else {
+                $usuario->pokemon_imagen = null;
+            }
+        }
+
         return view('usuarios.index', compact('usuarios'));
     }
 

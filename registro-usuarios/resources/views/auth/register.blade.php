@@ -13,7 +13,7 @@
     }
 
     .card {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
         background: rgba(255, 255, 255, 0.3);
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
         border-radius: 15px;
@@ -21,7 +21,7 @@
     }
 
     .btn-primary {
-        background: linear-gradient(45deg, #007bff, #007bff);
+        background: linear-gradient(45deg, #000000ff, #000000ff);
         border: none;
         transition: all 0.3s ease-in-out;
     }
@@ -31,7 +31,7 @@
     }
 
     .text-link {
-        color: #007bff !important;
+        color: #011e3dff !important;
         font-weight: bold;
     }
 </style>
@@ -59,7 +59,7 @@
 
                         <!-- Correo Electrónico -->
                         <div class="form-group mb-3">
-                            <label for="email">{{ __('Correo Electrónico') }}</label>
+                            <label for="email">{{ __('Correo') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                 <input id="email" type="email" class="form-control" name="email" required placeholder="Ingresa tu correo">
@@ -100,7 +100,7 @@
 
                     <div class="text-center">
                         <p>¿Ya tienes cuenta? 
-                            <a href="{{ route('login') }}" class="text-link">Inicia sesión aquí</a>
+                            <a href="{{ route('login') }}" class="text-link">Inicio sesion</a>
                         </p>
                     </div>
                 </div>

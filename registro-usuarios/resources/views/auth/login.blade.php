@@ -13,26 +13,33 @@
     }
 
     .card {
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
         background: rgba(255, 255, 255, 0.3);
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-        border-radius: 15px;
+        border-radius: 17px;
     }
 
     .btn-primary {
-        background: linear-gradient(45deg, #007bff, #007bff);
+        background: linear-gradient(45deg, #000000, #434343);
         border: none;
+        color: white;
         transition: all 0.3s ease-in-out;
     }
 
     .btn-primary:hover {
         transform: scale(1.05);
+        background: linear-gradient(45deg, #1a1a1a, #5c5c5c);
     }
 
     /* Mejorar visibilidad del enlace */
     .text-link {
-        color: rgb(0, 123, 255) !important;
+        color: #98c5f5ff !important;
         font-weight: bold;
+    }
+
+    /* Ajustar el botón de ver contraseña */
+    .toggle-password {
+        border-radius: 0 0.375rem 0.375rem 0;
     }
 </style>
 
